@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = 'cache-control' content = 'no-cache'>
+    <meta http-equiv = 'expires' content = '0'>
+    <meta http-equiv = 'pragma' content = 'no-cache'>
+    <meta name="google" content="notranslate">
+    
+    <title>ZIS SMA ABBS 1444 H</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/zis/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/zis/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/zis/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/zis/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="/zis/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="/zis/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/zis/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Template Main CSS File -->
+    <link href="/zis/assets/css/style.css" rel="stylesheet">
+    <style type="text/css">
+        tr:nth-child(even) {
+            background: #f2f7f2;
+        }
+                
+        a.floattext:link {
+            font-size:80%;
+        }
+        
+        .float{
+	        position:fixed;
+	        width:95px;
+	        height:30px;
+	        bottom:8px;
+	        right:8px;
+	        background-color:#25D366;
+	        color:#FFF;
+	        border-radius:30px;
+	        text-align:center;
+	        box-shadow: 2px 2px 3px #999;
+        }
+
+        .my-float{
+	        margin-top:6px;
+        }
+        
+        .float2{
+	        position:fixed;
+	        width:90px;
+	        height:30px;
+	        bottom:8px;
+	        right:108px;
+	        background-color:#25D366;
+	        color:#FFF;
+	        border-radius:30px;
+	        text-align:center;
+	        box-shadow: 2px 2px 3px #999;
+        }
+
+        .my-float2{
+	        margin-top:6px;
+        }
+        
+        .float3{
+	        position:fixed;
+	        width:90px;
+	        height:30px;
+	        bottom:8px;
+	        right:202px;
+	        background-color:#25D366;
+	        color:#FFF;
+	        border-radius:30px;
+	        text-align:center;
+	        box-shadow: 2px 2px 3px #999;
+        }
+
+        .my-float3{
+	        margin-top:6px;
+        }
+    </style>
+</head>
+
+<body onload="TampilkanData(7,2);">
+    <main id="main" class="main">
+        <section class="section dashboard">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">ZIS SMA ABBS Surakarta</h1>
+                    <h5 id="update" class="text-center mb-4"></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center mb-4">
+                    <a class="btn btn-primary btn-sm" href="/zis/rekap-kelas/" role="button">Kembali</a>
+                    <button type="button" class="rekening btn btn-primary btn-sm text-center">Rekening Donasi</button>
+                    <button onclick="location.reload(true);" type="button" class=" btn btn-success btn-sm text-center">Refresh</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <div class="card recent-sales overflow-auto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Rekap Kelas XII MIPA 7</h5>
+                            <div class="table-responsive">
+                            <table class="table table-borderless datatable">
+                              <thead align="center">
+                                <tr>
+                                    
+                                    <th>Nama</th>
+                                    <th>Status</th>
+                                    <th>Infaq Pembangunan</th>
+                                    <th>Orang Tua Asuh</th>
+                                    <th>Donasi Buka Puasa</th>
+                                    <th>Program Cinta Dhuafa</th>
+                                    <th>Zakat Fitrah (Uang)</th>
+                                    <th>Zakat Fitrah (Beras)</th>
+                                    <th>Zakat Mal</th>
+                                    <th>Infaq (Umum)</th>
+                                    <th>Shodaqoh</th>  
+                                    <th>Fidyah</th>
+                                                                       
+                                </tr>
+                              </thead>
+                              <tbody id="datax7">
+                                <!-- data tabel -->
+                              </tbody>
+                            </table></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <a href="https://wa.me/+6287899613573?text=Assalamu%27alaikum+Wr.+Wb.%0D%0AKami+ingin+konfirmasi+ZISWAF+ananda+atas+nama+%3A%0D%0A%0D%0ANama+%3A+%0D%0AKelas+%3A%0D%0AJumlah+%3A%0D%0AKeterangan+%3A%0D%0A%0D%0ATerima+kasih." class="float floattext"><i class="fa fa-whatsapp my-float" style="font-size:18px"></i> Ms Meina</a>
+    <a href="https://wa.me/+6285290901961?text=Assalamu%27alaikum+Wr.+Wb.%0D%0AKami+ingin+konfirmasi+ZISWAF+ananda+atas+nama+%3A%0D%0A%0D%0ANama+%3A+%0D%0AKelas+%3A%0D%0AJumlah+%3A%0D%0AKeterangan+%3A%0D%0A%0D%0ATerima+kasih." class="float3 floattext"><i class="fa fa-whatsapp my-float3" style="font-size:18px"></i> Ms Umi</a>
+    <a href="https://wa.me/+6285799507177?text=Assalamu%27alaikum+Wr.+Wb.%0D%0AKami+ingin+konfirmasi+ZISWAF+ananda+atas+nama+%3A%0D%0A%0D%0ANama+%3A+%0D%0AKelas+%3A%0D%0AJumlah+%3A%0D%0AKeterangan+%3A%0D%0A%0D%0ATerima+kasih." class="float2 floattext"><i class="fa fa-whatsapp my-float2" style="font-size:18px"></i> Ms Ani</a>
+
+    <!-- Google API -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="/zis/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="/zis/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"
+        integrity="sha256-Fh801SO9gqegfUdkDxyzXzIUPWzO/Vatqj8uN+5xcL4=" crossorigin="anonymous"></script>
+        
+    <script src="/zis/assets/js/x.js?version=1.3"></script>
+    <script src="/zis/assets/js/tanggal.js"></script>
+    <script src="/zis/assets/js/rekening.js?version=1.3"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    
+    <!-- Vendor JS Files -->
+    <script src="/zis/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="/zis/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/zis/assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="/zis/assets/vendor/echarts/echarts.min.js"></script>
+    <script src="/zis/assets/vendor/quill/quill.min.js"></script>
+
+    <script src="/zis/assets/vendor/php-email-form/validate.js"></script>
+
+
+</body>
+
+</html>
