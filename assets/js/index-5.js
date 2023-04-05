@@ -46,7 +46,7 @@ const Urlgsheet4 =
 function DisplayBody4(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd){
     d8 = d8 + `
             <tr>
-            <td align="center"><a class="btn btn-primary btn-sm" href="/zis/rekap-kelas/${kls}/" role="button">${kls}</a></td>
+            <td align="center"><a class="btn btn-primary btn-sm" href="/rekap-kelas/${kls}/" role="button">${kls}</a></td>
             <td align="right">${tot}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>

@@ -61,7 +61,7 @@ function DisplayBody3(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     
     d6 = d6 + `
             <tr>
-            <td align="center"><a class="btn btn-primary btn-sm" href="/zis/rekap-kelas/${kls}/" role="button">${kls}</a></td>
+            <td align="center"><a class="btn btn-primary btn-sm" href="/rekap-kelas/${kls}/" role="button">${kls}</a></td>
             <td align="right">${status}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>
