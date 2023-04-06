@@ -55,8 +55,8 @@ function TampilkanData(datakelas,level){
             UrlX = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSnBJju7IHGWyJBMxHd0B21gwpN9q7SOuIk3OO30_94NXyjnqbM28O6mSvcAtBQRMrUQuNiA0s2uEMX/pub?gid=2002945574&single=true&output=csv';
             a = 2; b = 30;
             c = 30; d = 61;
-            e = 61; f = 92;
-            g = 92; h = 124;
+            e = 61; f = 93;
+            g = 93; h = 124;
             i = 124; j = 157;
             k = 157; l = 184;
             m = 184; n = 212;
