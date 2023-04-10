@@ -13,6 +13,7 @@ const Urlgsheet4 =
             arrayObj4 = results.data;
 
             DisplayBody4(arrayObj4[0]['Nama'],
+                arrayObj4[0]['Berdonasi'],
                 arrayObj4[0]['Total Kelas'],
                 arrayObj4[0]['Infaq Pembangunan'],
                 arrayObj4[0]['Orang Tua Asuh'],
@@ -27,6 +28,7 @@ const Urlgsheet4 =
                 );
             
             DisplayFoot4(arrayObj4[1]['Nama'],
+                arrayObj4[1]['Berdonasi'],
                 arrayObj4[1]['Total Kelas'],
                 arrayObj4[1]['Infaq Pembangunan'],
                 arrayObj4[1]['Orang Tua Asuh'],
@@ -43,10 +45,11 @@ const Urlgsheet4 =
         }
     })
 
-function DisplayBody4(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd){
+function DisplayBody4(kls,don,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd){
     d8 = d8 + `
             <tr>
             <td align="center"><a class="btn btn-primary btn-sm" href="/rekap-kelas/${kls}/" role="button">${kls}</a></td>
+            <td align="right">${don}</td>
             <td align="right">${tot}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>
@@ -65,10 +68,11 @@ function DisplayBody4(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd){
     data4.innerHTML = d8;
 }
 
-function DisplayFoot4(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd){
+function DisplayFoot4(kls,don,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd){
     d9 = d9 + `
             <tr style="font-weight:bold">
             <td align="center">${kls}</td>
+            <td align="right">${don}</td>
             <td align="right">${tot}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>
