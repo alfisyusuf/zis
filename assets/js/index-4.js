@@ -15,6 +15,7 @@ const Urlgsheet3 =
 
             for(let data = 0; data < 12; data++){
                 DisplayBody3(arrayObj3[data]['Kelas'],
+                arrayObj3[data]['Jumlah Siswa Berdonasi'],
                 arrayObj3[data]['Total Kelas'],
                 arrayObj3[data]['Infaq Pembangunan'],
                 arrayObj3[data]['Orang Tua Asuh'],
@@ -31,6 +32,7 @@ const Urlgsheet3 =
             }  
             
             DisplayFoot3(arrayObj3[12]['Kelas'],
+                arrayObj3[12]['Jumlah Siswa Berdonasi'],
                 arrayObj3[12]['Total Kelas'],
                 arrayObj3[12]['Infaq Pembangunan'],
                 arrayObj3[12]['Orang Tua Asuh'],
@@ -48,7 +50,7 @@ const Urlgsheet3 =
         }
     })
 
-function DisplayBody3(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
+function DisplayBody3(kls,don,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     let status = '';
     
     if(stt == 'danger'){
@@ -62,6 +64,7 @@ function DisplayBody3(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     d6 = d6 + `
             <tr>
             <td align="center"><a class="btn btn-primary btn-sm" href="/rekap-kelas/${kls}/" role="button">${kls}</a></td>
+            <td align="right">${don}</td>
             <td align="right">${status}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>
@@ -80,7 +83,7 @@ function DisplayBody3(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     data2.innerHTML = d6;
 }
 
-function DisplayFoot3(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
+function DisplayFoot3(kls,don,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     let statusf = '';
     
     if(stt == 'danger'){
@@ -94,6 +97,7 @@ function DisplayFoot3(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     d7 = d7 + `
             <tr style="font-weight:bold">
             <td align="center">${kls}</td>
+            <td align="right">${don}</td>
             <td align="right">${statusf}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>
