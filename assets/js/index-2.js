@@ -32,7 +32,7 @@ const Urlgsheet =
             }  
             
             DisplayFoot(arrayObj[12]['Kelas'],
-                arrayObj[data]['Jumlah Siswa Berdonasi'],
+                arrayObj[12]['Jumlah Siswa Berdonasi'],
                 arrayObj[12]['Total Kelas'],
                 arrayObj[12]['Infaq Pembangunan'],
                 arrayObj[12]['Orang Tua Asuh'],
