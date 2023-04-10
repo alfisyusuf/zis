@@ -15,6 +15,7 @@ const Urlgsheet =
 
             for(let data = 0; data < 12; data++){
                 DisplayBody(arrayObj[data]['Kelas'],
+                arrayObj[data]['Jumlah Siswa Berdonasi'],
                 arrayObj[data]['Total Kelas'],
                 arrayObj[data]['Infaq Pembangunan'],
                 arrayObj[data]['Orang Tua Asuh'],
@@ -31,6 +32,7 @@ const Urlgsheet =
             }  
             
             DisplayFoot(arrayObj[12]['Kelas'],
+                arrayObj[data]['Berdonasi'],
                 arrayObj[12]['Total Kelas'],
                 arrayObj[12]['Infaq Pembangunan'],
                 arrayObj[12]['Orang Tua Asuh'],
@@ -48,7 +50,7 @@ const Urlgsheet =
         }
     })
 
-function DisplayBody(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
+function DisplayBody(kls,don,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     let status = '';
     
     if(stt == 'danger'){
@@ -62,6 +64,7 @@ function DisplayBody(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     d2 = d2 + `
             <tr>
             <td align="center"><a class="btn btn-primary btn-sm" href="/rekap-kelas/${kls}/" role="button">${kls}</a></td>
+            <td align="right">${don}</td>
             <td align="right">${status}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>
@@ -80,7 +83,7 @@ function DisplayBody(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     data2.innerHTML = d2;
 }
 
-function DisplayFoot(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
+function DisplayFoot(kls,don,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     let statusf = '';
     
     if(stt == 'danger'){
@@ -94,6 +97,7 @@ function DisplayFoot(kls,tot,ip,ota,dbp,pcd,zfu,zfb,zm,iu,shd,fd,stt){
     d3 = d3 + `
             <tr style="font-weight:bold">
             <td align="center">${kls}</td>
+            <td align="right">${don}</td>
             <td align="right">${statusf}</td>
             <td align="right">${ip}</td>
             <td align="right">${ota}</td>
