@@ -118,7 +118,7 @@ function TampilkanData(datakelas,level){
                     Loop(w,x,'datax12'); 
                     break;
                 case 13:
-                    for(nm = 2; nm < 10; nm++){
+                    for(nm = 2; nm < 30; nm++){
                         DisplayBodyUmum(
                         arrayObjX[nm][0],
                         arrayObjX[nm][1],
