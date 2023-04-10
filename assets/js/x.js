@@ -25,16 +25,16 @@ function TampilkanData(datakelas,level){
             UrlX = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSnBJju7IHGWyJBMxHd0B21gwpN9q7SOuIk3OO30_94NXyjnqbM28O6mSvcAtBQRMrUQuNiA0s2uEMX/pub?gid=0&single=true&output=csv';
             a = 2; b = 36;
             c = 36; d = 69;
-            e = 69; f = 102;
-            g = 102; h = 132;
-            i = 132; j = 164;
-            k = 164; l = 198;
-            m = 198; n = 233;
-            o = 233; p = 260;
-            q = 260; r = 287;
-            s = 287; t = 314;
-            u = 314; v = 342;
-            w = 342; x = 371;
+            e = 69; f = 101;
+            g = 101; h = 131;
+            i = 131; j = 163;
+            k = 163; l = 197;
+            m = 197; n = 231;
+            o = 231; p = 258;
+            q = 258; r = 286;
+            s = 286; t = 313;
+            u = 313; v = 341;
+            w = 341; x = 370;
             break;
         case 1:
             UrlX = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSnBJju7IHGWyJBMxHd0B21gwpN9q7SOuIk3OO30_94NXyjnqbM28O6mSvcAtBQRMrUQuNiA0s2uEMX/pub?gid=544917679&single=true&output=csv';
